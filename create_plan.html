@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create a plan</title>
+    <link rel="stylesheet" type="text/css" href="CSS/create_plan.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/general_navbar.css">
+    <script src="JS/create_plan.js"></script>
+    <script src="JS/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-primary">
+        <p class="nav">Friends On The Way</p>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="plan_trip.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="plan_trip.html">Search <span class="sr-only">(current)</span></a>
+                </li>
+                <button class="btn btn-primary" onclick="userLogout()">Logout </button>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <p class="nav">User</p>
+                <a class="profile-img" href="user_profile.html">
+                    <img class="profile-img" src="PIC/profile_photo.png" alt="">
+                </a>
+            </form>
+        </div>
+    </nav>
+
+    <div>
+        <img class ="backgroundImage" src="PIC/create_plan.jpg" alt="bg">
+    </div>
+
+    <div id="message-container">
+        <p> Say Hi to New Adventure</p>
+    </div>
+
+    <div id="small-message-container">
+        <p> Your ideal fellow travellers await, Go find it! </p>
+    </div>
+
+
+    <div id="form-container">
+        <form id='PlaceInfoForm'>
+            <label for='PlanName'></label><input class="input" id='PlanName' type="text" placeholder="Your name for the plan?">
+            <br>
+            <label for='StartPlace'></label><input class="input" id='StartPlace' type="text" placeholder="Your start place?">
+            <br>
+            <label for='EndPlace'></label><input class="input" id='EndPlace' type="text" placeholder="Your end place?">
+            <br>
+            <label for='MethodOfTravel'></label><input class="input" id='MethodOfTravel' type="text" placeholder="Your method of travel?">
+            <br>
+            <label for='ExceptCost'></label><input class="input" id='ExceptCost' type="text" placeholder="Your except cost?">
+            <br>
+            <label for='StartDate'></label><input class="input" id='StartDate' type="text" placeholder="Your start date?">
+            <br>
+            <label for='EndDate'></label><input class="input" id='EndDate' type="text" placeholder="Your end date?">
+            <br>
+            <label for='EndDate'></label>
+            <label for='Description'></label>
+            <textarea class="input" id='Description' type="text" placeholder="Description"></textarea>
+            <br>
+        </form>
+        <button id='PlanTrip' type="submit" onclick="jumpTo('view_plan.html')">Plan it !</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User profile</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="JS/user_profile.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/general_navbar.css">
+    <link href="CSS/user_profile.css" rel="stylesheet">
+    <script src="JS/logout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <p class="nav">Friends On The Way</p>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="plan_trip.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <button class="btn btn-primary" onclick="userLogout()">Logout </button>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container emp-profile">
+        <form method="post">
+            <div class="row">
+                <div class="col-md-4">
+                    <div id="profile-img">
+                        <img src="PIC/anita.png" alt="profile photo"/>
+                        <div class="file btn btn-lg btn-primary">
+                            Change Photo
+                            <input type="file" name="file"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="dash" class="profile-head">
+                        <h5>
+                            My profile
+                        </h5>
+                        <div id="name1" >
+<!--                            <h6>-->
+<!--                                Username-->
+<!--                            </h6>-->
+                        </div>
+
+                    </div>
+                    <div class="profile-head">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" onclick="transit_home()" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">About Me</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" onclick="transit_pro()" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Footprints</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-2">
+                    <a class="edit_button" href="my_profile.html">Edit Profile <span class="sr-only">(current)</span></a><br>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="profile-work">
+                        <a href="view_plan.html">My plans</a><br/><br>
+
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="tab-content profile-tab" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                            <div class="row">
+                                <label class="col-md-5 control-label" for="name2">First name</label>
+                                <div id="name2" class="col-md-5">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-md-5 control-label" for="name3">Last name</label>
+                                <div id="name3" class="col-md-5">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-md-5 control-label" for="gen">Gender</label>
+                                <div id="gen" class="col-md-5">
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <label class="col-md-5 control-label" for="ema">Email address</label>
+                                <div id="ema" class="col-md-5">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <label class="col-md-5 control-label" for="ph">Phone number</label>
+                                <div id="ph" class="col-md-5">
+
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <label class="col-md-5 control-label" for="des">Detail description:</label>
+                                <div id="des" class="col-md-5">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <a class="welcome-button" id="login-button" href="my_profile.html">Edit</a>
+                                <form action = "/"></form>
+                            </div>
+                        </div>
+
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab" hidden="hidden">
+                            <section id="pinBoot">
+
+                                <article class="white-panel">
+                                    <div class="foot">
+                                        <h5>Add your footprint here!</h5>
+                                    </div>
+
+                                    <label class="col-md-5 control-label" for="place"><h4>Place name</h4></label>
+                                    <div id="place"></div>
+
+                                    <label class="col-md-5 control-label" for="date"><h4>Date visited</h4></label>
+                                    <div id="date"></div>
+<!--                                    <input id="Date" name="Date" type="text" placeholder="Date" class="form-control input-md">-->
+                                    <label class="col-md-5 control-label" for="fe"><h4>Your thoughts</h4></label>
+                                    <div id="fe"></div>
+<!--                                    <textarea class="form-control" rows="4"  id="feel" name="description" placeholder="max 50 words"></textarea>-->
+
+                                </article>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin main</title>
+    <link rel="stylesheet" type="text/css" href="CSS/general_navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/admin_main.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JS/admin_main.js"></script>
+    <script src="JS/logout.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-sandy">
+        <p class="nav">Friends On The Way</p>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <button class="btn bg-sandy text-white" onclick="adminLogout()">Logout </button>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <p class="nav">Admin</p>
+                <img class="profile-img" src="PIC/profile_photo.png" alt="">
+            </form>
+        </div>
+    </nav>
+
+    <div id="main-background">
+        <img src="PIC/main_background.jpg" class="backgroundImage" alt="MainBackground"/>
+    </div>
+
+    <div id="function-container">
+        <button class="function_button" id="insertPlan"  onclick="jumpTo('admin_insert_recommendation.html')">
+            <p class="button-message">Insert New Recommendation</p>
+        </button>
+
+        <button class="function_button" id="validateUser"  onclick="jumpTo('admin_validate_users.html')">
+            <p class="button-message">Validate Users</p>
+        </button>
+
+        <button class="function_button" id="delete" onclick="jumpTo('admin_delete_plan.html')">
+            <p class="button-message">Manage Plans</p>
+        </button>
+    </div>
+</body>
+</html>

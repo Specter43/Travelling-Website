@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends On The Way</title>
+    <link rel="stylesheet" type="text/css" href="CSS/general_navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="JS/index.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <p class="nav">Friends On The Way</p>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="admin_login.html">Admin Login <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="welcome-header">
+        <img src="PIC/Traveling-With-Friends-1.jpg" class="backgroundImage" alt="Welcome"/>
+    </div>
+
+    <div id="welcome-basic-info">
+        <img src="PIC/IMG_1369.PNG" class="title-pic" alt="gender-pic">
+        <div id="new_user">
+            <div id="message">
+                <p>
+                    Introduce yourself?
+                </p>
+            </div>
+
+            <div class="gender-choice">
+                <p>
+                    I am a
+                    <label>
+                        <input type="radio" name="gender" value="mal">
+                    </label>
+                    <img src="PIC/boy.png" class="gender-icon" alt="male">
+                    <label>
+                        <input type="radio" name="gender" value="mal">
+                    </label>
+                    <img src="PIC/girl.png" class="gender-icon" alt="girl">
+                </p>
+            </div>
+        </div>
+        <div id="buttons-container">
+            <button type="submit" id="signup-button" class="welcome-button" onclick="jumpTo('signup.html')">New traveller? Find new friends!</button>
+            <br>
+            <button type="submit" id="login-button" class="welcome-button" onclick="logIn()">Log in</button>
+            <p id="incorrect_message"></p>
+        </div>
+    </div>
+
+    <div class="intro-container">
+        <img src="PIC/intro.png" class="intro" alt="into">
+    </div>
+
+    <div class="copyright-container">
+       <p class="copyright">
+           Copyright University of Toronto CSC309 2019-Fall Group37
+       </p>
+    </div>
+</body>
+</html>

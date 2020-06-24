@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Friends On The Way</title>
+    <link rel="stylesheet" type="text/css" href="CSS/general_navbar.css">
+    <link rel="stylesheet" type="text/css" href="CSS/signup.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JS/signup.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-grey">
+        <p class="nav">Friends On The Way</p>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="welcome-header">
+        <img src="PIC/signUpBack.jpg" class="backgroundImage" alt="Welcome"/>
+    </div>
+
+    <div id="welcome-basic-info">
+          <section id="signup_section">
+            <div>
+                <h4 class="card-title mt-3 text-center">Create Account</h4>
+                <p class="signup-message">Get started with your free account</p>
+                <p class="signup-message">Have an account? <a href="index.html">Go back</a> </p>
+            </div>
+            <form id="SignUp" method="post">
+                    <table>
+                        <tr><td></td><td><label id="email_msg" class="err_msg"></label></td></tr>
+                        <tr><td>Email: </td><td><label for="email"></label><input id="email" type="text" name="email" /></td> </tr>
+                         
+                        <tr><td></td><td><label id="uname_msg" class="err_msg"></label></td></tr>          
+                        <tr><td>Username: </td><td><label for="uname"></label><input id="uname" type="text" name="uname" /></td></tr>
+                        
+                        <tr><td></td><td><label id="pswd_msg" class="err_msg"></label></td></tr>
+                        <tr><td>Password: </td><td><label for="password"></label><input id="password" type="password" name="password" /></td></tr>
+                        
+                        <tr><td></td><td><label id="pswdr_msg" class="err_msg"></label></td></tr>            
+                        <tr><td>Confirm Password: </td><td><label for="password2"></label><input id="password2" type="password" name="pwdr" /></td></tr>
+
+                        <tr><td></td><td><label id="fname_msg" class="err_msg"></label></td></tr>            
+                        <tr><td>First name: </td><td><label for="fname"></label><input id="fname" type="text" name="fname" /></td></tr>
+
+                        <tr><td></td><td><label id="lname_msg" class="err_msg"></label></td></tr>            
+                        <tr><td>Last name: </td><td><label for="lname"></label><input id="lname" type="text" name="lname"/></td></tr>
+
+                        <tr><td></td><td><label id="phone_msg" class="err_msg"></label></td></tr>            
+                        <tr><td>Phone: </td><td><label for="phone"></label><input id="phone" type="text" name="fname" /></td></tr>
+
+                        <tr><td></td><td><label id="gender_msg" class="err_msg"></label></td></tr>            
+                        <tr><td>Gender: </td><td><label for="gender"></label><input id="gender" type="text" name="fname" /></td></tr>
+                    </table>
+                    
+
+            </form>
+    </section>
+        <div id="buttons-container">
+            <button class="submit_button" type="submit" id="signup-button" onclick="jumpTo('plan_trip.html')">Submit</button>
+            <button class="submit_button" type="submit" id="reset-button" onclick="SignUpResetForm()">Reset</button>
+            
+        </div>
+    </div>
+</body>
+</html>
+
+

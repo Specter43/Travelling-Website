@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Validate users</title>
+    <link rel="stylesheet" type="text/css" href="CSS/general_navbar.css">
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="JS/admin_validate_users.js"></script>
+    <link rel="stylesheet" type="text/css" href="CSS/admin_validate_users.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="JS/logout.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand bg-sandy">
+        <p class="nav">Friends On The Way</p>
+
+        <div id="navbarSupportedContent" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="admin_main.html">Back to Menu<span class="sr-only">(current)</span></a>
+                </li>
+                <button class="btn bg-sandy text-white" onclick="adminLogout()">Logout </button>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <p class="nav">Admin</p>
+                <img class="profile-img" src="PIC/profile_photo.png" alt="">
+            </form>
+        </div>
+    </nav>
+
+    <div id="main-background">
+        <img src="PIC/main_background.jpg" class="backgroundImage" alt="MainBackground"/>
+    </div>
+
+
+    <div id="main-message-container">
+        <h2 class="display-4">Validate users</h2>
+    </div>
+
+    <div id="table1" class="container py-8">
+        <div class="col-lg-11 mx-auto bg-white rounded shadow">
+            <div class="col-lg-12 table-responsive text-nowrap">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-2">Email</th>
+                            <th scope="col" class="col-2">Username</th>
+                            <th scope="col" class="col-2">First name</th>
+                            <th scope="col" class="col-2">Last name</th>
+                            <th scope="col" class="col-2">Phone</th>
+                            <th scope="col" class="col-2">Gender</th>
+                            <th scope="col" class="col-2">      </th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
